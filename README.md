@@ -18,6 +18,7 @@ The installer itself is downloaded from the official Statement Importer GitHub r
 - No statements, account data, database backups, passwords or API keys belong in this repository.
 - Statement Importer operates locally and binds its optional API/MCP services to `127.0.0.1` by default.
 - The current installer is unsigned. Verify its published SHA-256 checksum while trusted code-signing approval is pending.
+- Version 1.2.0 provides a recommended one-click local database setup; manual PostgreSQL connection fields are now an Advanced option.
 
 ## License
 
