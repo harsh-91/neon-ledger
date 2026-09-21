@@ -17,8 +17,8 @@ The installer itself is downloaded from the official Statement Importer GitHub r
 
 - No statements, account data, database backups, passwords or API keys belong in this repository.
 - Statement Importer operates locally and binds its optional API/MCP services to `127.0.0.1` by default.
-- Version 1.3.4 is unsigned. Verify its published SHA-256 checksum while trusted code-signing approval is pending.
-- Version 1.3.4 bypasses the generic Windows Setup close-applications stage and directly closes the old app before replacing its files; PostgreSQL data is preserved.
+- Version 1.3.5 is unsigned. Verify its published SHA-256 checksum while trusted code-signing approval is pending.
+- Version 1.3.5 uses a bounded, two-second direct close during upgrades, so setup cannot wait indefinitely while preparing to install; PostgreSQL data is preserved.
 - Version 1.3.2 fixes the existing-database wizard freeze by bounding connection attempts to five seconds.
 - Version 1.3.0 includes an explicitly controlled updater that refuses unsigned installers; no download or install is silent.
 - One-click local database setup remains the recommended path; manual PostgreSQL connection fields are an Advanced option.
