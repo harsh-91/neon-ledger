@@ -196,6 +196,7 @@
       <a class="brand" href="#top">NEON_LEDGER</a>
       <div class="nav-links">
         <a class="nav-link" href="#how-to-use">How to use</a>
+        <a class="nav-link" href="#updates">Updates</a>
         <a class="nav-link" href="#api-mcp">API + MCP</a>
         <a class="nav-link" href="https://github.com/harsh-91/statement-importer">GitHub ↗</a>
       </div>
@@ -209,10 +210,10 @@
         <h1>Your statements.<span>Your database.</span></h1>
         <p class="lede">Import bank statements into PostgreSQL, prevent duplicates, reconcile balances and query everything through one unified view. Your financial files and passwords stay on your computer.</p>
         <div class="actions">
-          <a class="button" href="https://github.com/harsh-91/statement-importer/releases/download/v1.2.0/StatementImporter-1.2.0-Setup-x64.exe">↓ Download for Windows</a>
-          <a class="button secondary" href="https://github.com/harsh-91/statement-importer/releases/tag/v1.2.0">Release details</a>
+          <a class="button" href="https://github.com/harsh-91/statement-importer/releases/download/v1.3.0/StatementImporter-1.3.0-Setup-x64.exe">↓ Download for Windows</a>
+          <a class="button secondary" href="https://github.com/harsh-91/statement-importer/releases/tag/v1.3.0">Release details</a>
         </div>
-        <p class="micro"><strong>Version 1.2.0</strong> · Windows 10/11 x64 · MIT licensed · No account required</p>
+        <p class="micro"><strong>Version 1.3.0</strong> · Windows 10/11 x64 · MIT licensed · No account required</p>
       </div>
 
       <aside class="terminal" aria-label="Application capabilities">
@@ -222,6 +223,7 @@
           <p class="ok">POSTGRESQL READY</p>
           <p class="ok">OFFLINE MODE READY</p>
           <p class="ok">DUPLICATE GUARD ACTIVE</p>
+          <p class="ok">UPDATE GUARD ACTIVE</p>
           <p class="ok">REST + MCP AVAILABLE</p>
           <p>&gt; <strong>YOUR DATA STAYS LOCAL_</strong></p>
         </div>
@@ -259,6 +261,16 @@
       <div class="notice"><strong>Windows signing status:</strong> this release is currently unsigned, so Microsoft SmartScreen may show “Unknown publisher.” Verify the checksum below before running it and review the <a href="https://github.com/harsh-91/statement-importer/blob/main/CODE_SIGNING.md">code signing policy</a>.</div>
     </section>
 
+    <section id="updates" aria-labelledby="updates-title">
+      <h2 id="updates-title">Updates without surprises</h2>
+      <p class="lede">Version 1.3.0 adds an update center inside the app. Check manually whenever you want, or opt in to one release check when the app starts.</p>
+      <div class="grid">
+        <article class="card"><h3>You stay in control</h3><p>An automatic check only reads public release metadata. The app never downloads or installs an update silently; both actions require your click.</p></article>
+        <article class="card"><h3>Verification before install</h3><p>The app checks the exact official GitHub asset, size, published SHA-256 and Windows Authenticode signature. It refuses installation unless Windows validates SignPath Foundation as the signer.</p></article>
+      </div>
+      <p class="security-note">OFFLINE STAYS OFFLINE // Leave automatic checks disabled and every local feature continues to work without internet. Users on version 1.2.0 or earlier need this one manual v1.3.0 installation to gain the updater.</p>
+    </section>
+
     <section id="api-mcp" aria-labelledby="access-title">
       <h2 id="access-title">REST API + MCP</h2>
       <p class="lede">Give reporting tools and AI clients read-only access to normalized transactions. Open <strong>API / MCP</strong> inside Statement Importer, generate a key, then enable only the service you need.</p>
@@ -290,9 +302,9 @@
 
     <section aria-labelledby="verify-title">
       <h2 id="verify-title">Verify your download</h2>
-      <p class="lede">SHA-256 for <strong>StatementImporter-1.2.0-Setup-x64.exe</strong></p>
+      <p class="lede">SHA-256 for <strong>StatementImporter-1.3.0-Setup-x64.exe</strong></p>
       <div class="checksum">
-        <code id="hash">952BDD246C21C3C7312BE84138983BAC6DA0C309131B53009BB684CB5397AB2D</code>
+        <code id="hash">589FAE2985D8A4C65B7C038F47DD26C7130A0EAF21A9BAD7DC8654050B90E5C2</code>
         <button class="copy" type="button" id="copy-hash">COPY HASH</button>
       </div>
     </section>
@@ -313,7 +325,7 @@
 
   <footer>
     <div class="shell">
-      <span><strong>NEON LEDGER</strong> // Statement Importer v1.2.0 · MIT License</span>
+      <span><strong>NEON LEDGER</strong> // Statement Importer v1.3.0 · MIT License</span>
       <span class="footer-creator"><span>Created by <strong>Harsh</strong><small>Made in India 🇮🇳</small></span><img class="footer-portrait" src="harsh-2bit.png" alt="Two-bit pixel portrait of Harsh" width="68" height="68"></span>
     </div>
   </footer>
