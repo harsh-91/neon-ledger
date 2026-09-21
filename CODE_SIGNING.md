@@ -3,7 +3,7 @@
 
 ## Current status
 
-Statement Importer `v1.3.1` is currently unsigned. It must not be represented as signed until a trusted Authenticode signature has been applied and independently verified.
+Statement Importer `v1.3.2` is currently unsigned. It must not be represented as signed until a trusted Authenticode signature has been applied and independently verified.
 
 The project is preparing an application for **free code signing provided by SignPath.io, certificate by SignPath Foundation**. Signing can begin only after the open-source project is reviewed and approved by SignPath Foundation.
 
