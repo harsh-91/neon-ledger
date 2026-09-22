@@ -210,10 +210,10 @@
         <h1>Your statements.<span>Your database.</span></h1>
         <p class="lede">Import bank statements into PostgreSQL, prevent duplicates, reconcile balances and query everything through one unified view. Your financial files and passwords stay on your computer.</p>
         <div class="actions">
-          <a class="button" href="https://github.com/harsh-91/statement-importer/releases/download/v1.3.5/StatementImporter-1.3.5-Setup-x64.exe">↓ Download for Windows</a>
-          <a class="button secondary" href="https://github.com/harsh-91/statement-importer/releases/tag/v1.3.5">Release details</a>
+          <a class="button" href="https://github.com/harsh-91/statement-importer/releases/download/v1.4.0/StatementImporter-1.4.0-Setup-x64.exe">↓ Download for Windows</a>
+          <a class="button secondary" href="https://github.com/harsh-91/statement-importer/releases/tag/v1.4.0">Release details</a>
         </div>
-        <p class="micro"><strong>Version 1.3.5</strong> · Windows 10/11 x64 · Apache-2.0 · No account required</p>
+        <p class="micro"><strong>Version 1.4.0</strong> · Windows 10/11 x64 · Apache-2.0 · No account required</p>
       </div>
 
       <aside class="terminal" aria-label="Application capabilities">
@@ -239,8 +239,8 @@
     <section id="how-to-use" aria-labelledby="start-title">
       <h2 id="start-title">Use it in four steps</h2>
       <div class="steps">
-        <article class="step"><span class="step-number">01</span><h3>Install</h3><p>Run the Windows setup. Missing PostgreSQL or WebView2 downloads are selected automatically when internet access is available.</p></article>
-        <article class="step"><span class="step-number">02</span><h3>Set up</h3><p>Click <strong>Create my local database automatically</strong>. Existing-server settings remain under Advanced, with failed connection attempts safely stopped after five seconds.</p></article>
+        <article class="step"><span class="step-number">01</span><h3>Install</h3><p>Run the Windows setup. If PostgreSQL or WebView2 is missing, choose its download option or install it yourself. Follow progress in the prerequisite installer window.</p></article>
+        <article class="step"><span class="step-number">02</span><h3>Set up</h3><p>Click <strong>Set up storage and continue</strong>. See the current step and elapsed time as your database is prepared. The importer opens when ready; existing-server settings remain under Advanced.</p></article>
         <article class="step"><span class="step-number">03</span><h3>Import</h3><p>Select one or many CSV, XLS or XLSX statements. Add a per-file or batch password only when a statement is encrypted.</p></article>
         <article class="step"><span class="step-number">04</span><h3>Review</h3><p>Check reconciliation results, skipped duplicates, import history and the unified transaction view before reporting.</p></article>
       </div>
@@ -259,7 +259,7 @@
         </article>
       </div>
       <div class="notice"><strong>Windows signing status:</strong> this release is currently unsigned, so Microsoft SmartScreen may show “Unknown publisher.” Verify the checksum below before running it and review the <a href="https://github.com/harsh-91/statement-importer/blob/main/CODE_SIGNING.md">code signing policy</a>.</div>
-      <div class="notice"><strong>Upgrading from an older version?</strong> Cancel any setup that is stuck, then run version 1.3.5. This release bypasses the generic Windows setup close-applications stage and uses a two-second bounded close attempt before replacing the app; your PostgreSQL database and imported data are preserved.</div>
+      <div class="notice"><strong>Upgrading from an older version?</strong> Finish imports and backups, then run version 1.4.0. Setup shows progress while closing the previous copy and asks permission if it needs to force it to close. If a check fails, use Retry or Cancel and follow the recovery message.</div>
     </section>
 
     <section id="updates" aria-labelledby="updates-title">
@@ -269,7 +269,7 @@
         <article class="card"><h3>You stay in control</h3><p>An automatic check only reads public release metadata. The app never downloads or installs an update silently; both actions require your click.</p></article>
         <article class="card"><h3>Verification before install</h3><p>The app checks the exact official GitHub asset, size, published SHA-256 and Windows Authenticode signature. It refuses installation unless Windows validates SignPath Foundation as the signer.</p></article>
       </div>
-      <p class="security-note">OFFLINE STAYS OFFLINE // Leave automatic checks disabled and every local feature continues to work without internet. Because v1.3.5 is still awaiting SignPath signing, existing users must install this release manually; the safe updater intentionally rejects unsigned packages.</p>
+      <p class="security-note">OFFLINE STAYS OFFLINE // Leave automatic checks disabled and every local feature continues to work without internet. Because v1.4.0 is still awaiting SignPath signing, existing users must install this release manually; the safe updater intentionally rejects unsigned packages.</p>
     </section>
 
     <section id="api-mcp" aria-labelledby="access-title">
@@ -303,9 +303,9 @@
 
     <section aria-labelledby="verify-title">
       <h2 id="verify-title">Verify your download</h2>
-      <p class="lede">SHA-256 for <strong>StatementImporter-1.3.5-Setup-x64.exe</strong></p>
+      <p class="lede">SHA-256 for <strong>StatementImporter-1.4.0-Setup-x64.exe</strong></p>
       <div class="checksum">
-        <code id="hash">33EA445A4C2BA2BCC3A99DDE93F968E4302F0F49EC5FFDCCA686BCA4F3BF638A</code>
+        <code id="hash">19EA40C3B45BD9BD6C4061E78608E1F4561F73CBFD817A7C531E6F5854A8F48E</code>
         <button class="copy" type="button" id="copy-hash">COPY HASH</button>
       </div>
     </section>
@@ -326,7 +326,7 @@
 
   <footer>
     <div class="shell">
-      <span><strong>NEON LEDGER</strong> // Statement Importer v1.3.5 · Apache-2.0</span>
+      <span><strong>NEON LEDGER</strong> // Statement Importer v1.4.0 · Apache-2.0</span>
       <span class="footer-creator"><span>Created by <strong>Harsh</strong><small>Made in India 🇮🇳</small></span><img class="footer-portrait" src="harsh-2bit.png" alt="Two-bit pixel portrait of Harsh" width="68" height="68"></span>
     </div>
   </footer>
