@@ -8,6 +8,8 @@
   <meta name="description" content="Download Statement Importer from Neon Ledger, the retro-future home of an open-source offline-first Windows bank statement utility.">
   <title>Neon Ledger — Statement Importer for Windows</title>
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='10' fill='%2307110e'/%3E%3Cpath d='M16 17h32v7H16zm0 12h22v7H16zm0 12h32v7H16z' fill='%235cff9d'/%3E%3Crect x='41' y='29' width='7' height='7' fill='%23ffd65a'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="retro.css">
+  <script src="retro.js" defer></script>
   <style>
     :root {
       color-scheme: dark;
@@ -196,7 +198,7 @@
       <a class="brand" href="#top">NEON_LEDGER</a>
       <div class="nav-links">
         <a class="nav-link" href="#how-to-use">How to use</a>
-        <a class="nav-link" href="#updates">Updates</a>
+        <a class="nav-link" href="#latest-updates">What's new</a>
         <a class="nav-link" href="#api-mcp">API + MCP</a>
         <a class="nav-link" href="https://github.com/harsh-91/statement-importer">GitHub ↗</a>
       </div>
@@ -204,6 +206,8 @@
   </header>
 
   <main id="top" class="shell">
+    <div class="launch-grid">
+    <div class="launch-content">
     <div class="hero">
       <div>
         <p class="eyebrow">Neon Ledger // Open source · Offline first · Windows x64</p>
@@ -234,6 +238,41 @@
       <div class="fact"><b>Recognises structure</b><span>SBI, ICICI, IndusInd and safely mapped CSV/Excel layouts.</span></div>
       <div class="fact"><b>One reporting view</b><span>Connect DBeaver, Excel, Power BI, Tableau or your own tools.</span></div>
       <div class="fact"><b>Private by design</b><span>No cloud upload, telemetry or saved statement passwords.</span></div>
+    </div>
+
+    </div>
+    <aside id="latest-updates" class="release-rail" aria-labelledby="release-title">
+      <div class="rail-top"><span>TRANSMISSION LOG</span><span aria-hidden="true">▣ ▣ ▣</span></div>
+      <div class="rail-heading">
+        <svg class="pixel-ship" viewBox="0 0 16 16" aria-hidden="true" shape-rendering="crispEdges"><path fill="currentColor" d="M7 1h2v3h2v3h2v3h2v4h-4v-2H5v2H1v-4h2V7h2V4h2z"/><path fill="#050a08" d="M7 6h2v4H7z"/><path fill="#ffd65a" d="M5 14h2v2H5zm4 0h2v2H9z"/></svg>
+        <h2 id="release-title">Latest updates</h2>
+        <p>Three latest releases.<br>Fresh from mission control.</p>
+      </div>
+      <ol class="release-list">
+        <li class="release-entry">
+          <div class="release-meta"><time datetime="2026-09-22">22 SEP 2026</time><span class="new-badge">LATEST</span></div>
+          <h3><a href="https://github.com/harsh-91/statement-importer/releases/tag/v1.4.0">v1.4.0 <span aria-hidden="true">↗</span></a></h3>
+          <strong>A clearer flight path</strong>
+          <p>Visible setup progress and elapsed time, safer upgrade checks, retry options and simpler first-run navigation.</p>
+        </li>
+        <li class="release-entry">
+          <div class="release-meta"><time datetime="2026-09-21">21 SEP 2026</time></div>
+          <h3><a href="https://github.com/harsh-91/statement-importer/releases/tag/v1.3.5">v1.3.5 <span aria-hidden="true">↗</span></a></h3>
+          <strong>Installer preparation</strong>
+          <p>Removed the blocking wait on older app launchers during upgrade preparation.</p>
+        </li>
+        <li class="release-entry">
+          <div class="release-meta"><time datetime="2026-09-21">21 SEP 2026</time></div>
+          <h3><a href="https://github.com/harsh-91/statement-importer/releases/tag/v1.3.4">v1.3.4 <span aria-hidden="true">↗</span></a></h3>
+          <strong>Upgrade handling</strong>
+          <p>Replaced Windows Setup's generic close-applications stage with app-specific shutdown handling.</p>
+        </li>
+      </ol>
+      <a class="all-releases" href="https://github.com/harsh-91/statement-importer/releases">All release notes →</a>
+      <p class="rail-note">Older releases are superseded by v1.4.0. Dates shown in UTC.</p>
+      <div class="arcade-track" aria-hidden="true"><span>◆</span></div>
+      <button class="motion-control" type="button" aria-pressed="false" hidden>Pause animations</button>
+    </aside>
     </div>
 
     <section id="how-to-use" aria-labelledby="start-title">
