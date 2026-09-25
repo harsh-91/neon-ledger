@@ -13,6 +13,8 @@ GitHub Pages publishes this repository at:
 
 The installer itself is downloaded from the official Statement Importer GitHub release. The page includes installation instructions, system requirements, API/MCP connection guidance and the release SHA-256 checksum.
 
+The [privacy policy](privacy.html) explains local statement processing, optional network features, user-sent diagnostic reports and the public support contact.
+
 ## Updating the release column
 
 The right-hand transmission log in `index.html` lists exactly three public releases, newest first, with UTC publication dates and short curated summaries. At each release, add the new entry, remove the oldest, and update the superseded-version note alongside the download version and checksum. This static log works without JavaScript or a GitHub API connection. Retro animations use local CSS, offer a pause control, and respect reduced-motion preferences. The column stacks below the introduction on smaller screens.
