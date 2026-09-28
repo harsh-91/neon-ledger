@@ -113,6 +113,17 @@
     .button:focus-visible, .nav-link:focus-visible, .copy:focus-visible { outline: 3px solid var(--yellow); outline-offset: 4px; }
     .secondary { background: transparent; color: var(--green); box-shadow: none; }
 
+    .platform-downloads { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; align-items: start; }
+    .platform-download { display: flex; min-height: 92px; align-items: center; gap: 16px; padding: 14px 18px; border: 2px solid var(--green); background: var(--green); box-shadow: 5px 5px 0 #163b29; color: #041008; text-decoration: none; }
+    .platform-download.mac { border-color: var(--cyan); background: var(--cyan); box-shadow: 5px 5px 0 #173d45; }
+    .platform-download:hover { transform: translate(2px,2px); box-shadow: 3px 3px 0 #163b29; }
+    .platform-download.mac:hover { box-shadow: 3px 3px 0 #173d45; }
+    .platform-download:focus-visible, .intel-download:focus-visible { outline: 3px solid var(--yellow); outline-offset: 4px; }
+    .platform-download svg { width: 38px; height: 38px; flex: 0 0 38px; fill: currentColor; }
+    .platform-download strong { display: block; font-size: 1rem; line-height: 1.3; text-transform: uppercase; }
+    .platform-download small { display: block; margin-top: 4px; font-size: .75rem; line-height: 1.35; }
+    .intel-download { display: inline-block; margin-top: 12px; color: var(--cyan); font-size: .84rem; text-underline-offset: 4px; }
+
     .micro { margin-top: 18px; color: var(--muted); font-size: .86rem; }
     .micro strong { color: var(--yellow); }
 
@@ -186,6 +197,7 @@
       .nav-links { display: none; }
       .steps { grid-template-columns: 1fr; }
       .button { width: 100%; }
+      .platform-downloads { grid-template-columns: 1fr; }
       .checksum { display: block; }
       .copy { width: 100%; min-height: 46px; border-left: 0; border-top: 1px solid var(--line); }
     }
@@ -214,11 +226,20 @@
         <p class="eyebrow">Neon Ledger // Open source · Offline first · Windows + Mac</p>
         <h1>Your statements.<span>Your database.</span></h1>
         <p class="lede">Import bank statements into PostgreSQL, prevent duplicates, reconcile balances and query everything through one unified view. Your financial files and passwords stay on your computer.</p>
-        <div class="actions">
-          <a class="button" href="https://github.com/harsh-91/statement-importer/releases/download/v1.6.2/StatementImporter-1.6.2-Setup-x64.exe">↓ Download for Windows</a>
-          <a class="button secondary" href="https://github.com/harsh-91/statement-importer/releases/tag/v1.6.2">Release details</a>
+        <div class="platform-downloads" aria-label="Choose your download">
+          <a class="platform-download" href="https://github.com/harsh-91/statement-importer/releases/download/v1.6.2/StatementImporter-1.6.2-Setup-x64.exe">
+            <svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M1 3.2 7.2 2.35v5.1H1zm7.3-1L15 1.25v6.2H8.3zM1 8.55h6.2v5.1L1 12.8zm7.3 0H15v6.2l-6.7-.95z"/></svg>
+            <span><strong>Download for Windows</strong><small>v1.6.2 · Windows 10/11 x64</small></span>
+          </a>
+          <div>
+            <a class="platform-download mac" href="https://github.com/harsh-91/statement-importer/releases/download/v1.6.2-mac-beta.1/StatementImporter-1.6.2-macOS-arm64-beta.zip">
+              <svg viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516s1.52.087 2.475-1.258.762-2.391.728-2.43m3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422s1.675-2.789 1.698-2.854-.597-.79-1.254-1.157a3.7 3.7 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56s.625 1.924 1.273 2.796c.576.984 1.34 1.667 1.659 1.899s1.219.386 1.843.067c.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758q.52-1.185.473-1.282"/></svg>
+              <span><strong>Download for Mac</strong><small>Apple Silicon · unsigned beta</small></span>
+            </a>
+            <a class="intel-download" href="https://github.com/harsh-91/statement-importer/releases/download/v1.6.2-mac-beta.1/StatementImporter-1.6.2-macOS-x64-beta.zip">Intel Mac? Download the beta ZIP →</a>
+          </div>
         </div>
-        <p class="micro"><strong>Version 1.6.2</strong> · Windows 10/11 x64 · Apache-2.0 · No account required · Manual update</p>
+        <p class="micro">No account required · Apache-2.0 · <a href="https://github.com/harsh-91/statement-importer/releases/tag/v1.6.2">Windows release details</a> · <a href="https://github.com/harsh-91/statement-importer/releases/tag/v1.6.2-mac-beta.1">Mac beta details</a></p>
       </div>
 
       <aside class="terminal" aria-label="Application capabilities">
@@ -289,9 +310,9 @@
     </section>
 
     <section id="how-to-use" aria-labelledby="start-title">
-      <h2 id="start-title">Use the Windows app in four steps</h2>
+      <h2 id="start-title">Use the app in four steps</h2>
       <div class="steps">
-        <article class="step"><span class="step-number">01</span><h3>Install</h3><p>Run the Windows setup. If PostgreSQL or WebView2 is missing, choose its download option or install it yourself. Follow progress in the prerequisite installer window.</p></article>
+        <article class="step"><span class="step-number">01</span><h3>Install</h3><p>On Windows, run setup and follow any prerequisite prompts. On Mac, extract the ZIP, move the app to Applications, and install PostgreSQL 17 tools before opening it.</p></article>
         <article class="step"><span class="step-number">02</span><h3>Set up</h3><p>Click <strong>Set up storage and continue</strong>. See the current step and elapsed time as your database is prepared. The importer opens when ready; existing-server settings remain under Advanced.</p></article>
         <article class="step"><span class="step-number">03</span><h3>Import</h3><p>Select one or many CSV, XLS or XLSX statements. Add a per-file or batch password only when a statement is encrypted.</p></article>
         <article class="step"><span class="step-number">04</span><h3>Review</h3><p>Check reconciliation results, skipped duplicates, import history and the unified transaction view before reporting.</p></article>
@@ -301,8 +322,8 @@
           <h3>Requirements</h3>
           <ul>
             <li>Windows 10 build 17763+ or Windows 11</li>
-            <li>64-bit Intel or AMD computer</li>
-            <li>PostgreSQL and Microsoft Edge WebView2</li>
+            <li>Windows x64: PostgreSQL and Microsoft Edge WebView2</li>
+            <li>Mac beta: macOS 15+ on Apple Silicon or Intel, PostgreSQL 17 tools, and an unlocked login Keychain</li>
           </ul>
         </article>
         <article class="card">
@@ -311,17 +332,17 @@
         </article>
       </div>
       <div class="notice"><strong>Windows signing status:</strong> this release is currently unsigned, so Microsoft SmartScreen may show “Unknown publisher.” Verify the checksum below before running it and review the <a href="https://github.com/harsh-91/statement-importer/blob/main/CODE_SIGNING.md">code signing policy</a>.</div>
-      <div class="notice"><strong>Upgrading from an older version?</strong> Finish imports and make a database backup, then download and run the 1.6.2 installer manually. You do not need to uninstall the old version. Setup shows progress while closing the previous copy and asks permission if it needs to force it to close. If a check fails, use Retry or Cancel and follow the recovery message.</div>
+      <div class="notice"><strong>Upgrading Windows?</strong> Finish imports and make a database backup, then download and run the 1.6.2 installer manually. You do not need to uninstall the old version. Setup shows progress while closing the previous copy and asks permission if it needs to force it to close. If a check fails, use Retry or Cancel and follow the recovery message.</div>
     </section>
 
     <section id="updates" aria-labelledby="updates-title">
       <h2 id="updates-title">Updates without surprises</h2>
-      <p class="lede">Version 1.3.0 adds an update center inside the app. Check manually whenever you want, or opt in to one release check when the app starts.</p>
+      <p class="lede">Windows legacy installations can check for updates inside the app. The unsigned Mac beta is updated manually from its official release page.</p>
       <div class="grid">
-        <article class="card"><h3>You stay in control</h3><p>An automatic check only reads public release metadata. The app never downloads or installs an update silently; both actions require your click.</p></article>
-        <article class="card"><h3>Verification before install</h3><p>The app checks the exact official GitHub asset, size, published SHA-256 and Windows Authenticode signature. It refuses installation unless Windows validates SignPath Foundation as the signer.</p></article>
+        <article class="card"><h3>Windows update checks</h3><p>An automatic check only reads public release metadata. The Windows app never downloads or installs an update silently; both actions require your click.</p></article>
+        <article class="card"><h3>Windows verification</h3><p>The legacy updater checks the official GitHub asset, size, SHA-256 and Windows Authenticode signature. It refuses installation unless Windows validates SignPath Foundation as the signer.</p></article>
       </div>
-      <p class="security-note">OFFLINE STAYS OFFLINE // Leave automatic checks disabled and every local feature continues to work without internet. Version 1.6.2 is unsigned: download it here and run setup manually. The in-app updater intentionally rejects unsigned packages. Microsoft Store delivery and Store-managed updates are still pending approval.</p>
+      <p class="security-note">OFFLINE STAYS OFFLINE // Leave automatic checks disabled and every local feature continues to work without internet. Windows 1.6.2 is unsigned: download it here and run setup manually. The Windows in-app updater intentionally rejects unsigned packages. Microsoft Store delivery and Store-managed updates are still pending approval. Mac beta updates are manual.</p>
     </section>
 
     <section id="api-mcp" aria-labelledby="access-title">
@@ -354,7 +375,7 @@
     </section>
 
     <section aria-labelledby="verify-title">
-      <h2 id="verify-title">Verify your download</h2>
+      <h2 id="verify-title">Verify the Windows download</h2>
       <p class="lede">SHA-256 for <strong>StatementImporter-1.6.2-Setup-x64.exe</strong></p>
       <div class="checksum">
         <code id="hash">0E8D76765B3835510025214917BAE10094939AA6F93066CF93E063F791D312E5</code>
@@ -378,7 +399,7 @@
 
   <footer>
     <div class="shell">
-      <span><strong>NEON LEDGER</strong> // Statement Importer v1.6.2 · Apache-2.0</span>
+      <span><strong>NEON LEDGER</strong> // Windows v1.6.2 · Mac beta 1 · Apache-2.0</span>
       <a href="privacy.html">Privacy policy</a>
       <span class="footer-creator"><span>Created by <strong>Harsh</strong><small>Made in India 🇮🇳</small></span><img class="footer-portrait" src="harsh-2bit.png" alt="Two-bit pixel portrait of Harsh" width="68" height="68"></span>
     </div>

@@ -11,7 +11,7 @@ GitHub Pages publishes this repository at:
 
 <https://harsh-91.github.io/neon-ledger/>
 
-The Windows installer and Mac beta app ZIPs are downloaded from official Statement Importer GitHub releases. The page includes installation instructions, system requirements, API/MCP connection guidance and release checksums. Mac users should choose the Apple Silicon or Intel ZIP for their computer and consult the beta release for its SHA-256 checksum.
+The homepage shows Windows and Mac download buttons with platform logos. The Windows installer and Mac beta app ZIPs are downloaded from official Statement Importer GitHub releases. The page includes installation instructions, system requirements, API/MCP connection guidance and release checksums. Mac users should choose the Apple Silicon or Intel ZIP for their computer and consult the beta release for its SHA-256 checksum.
 
 The [privacy policy](privacy.html) explains local statement processing, optional network features, user-sent diagnostic reports and the public support contact.
 
