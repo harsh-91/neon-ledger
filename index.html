@@ -337,13 +337,13 @@
 
     <section id="updates" aria-labelledby="updates-title">
       <h2 id="updates-title">Updates without surprises</h2>
-      <p class="lede">Windows legacy installations can check for updates inside the app. The unsigned Mac beta is updated manually from its official release page.</p>
+      <p class="lede">Version 1.6.3 adds in-app update checks and verified downloads for Windows and Mac. On Mac, the verified ZIP opens in Finder for you to replace the app in Applications.</p>
       <div class="grid">
         <article class="card"><h3>Windows update checks</h3><p>An automatic check only reads public release metadata. The Windows app never downloads or installs an update silently; both actions require your click.</p></article>
-        <article class="card"><h3>Windows verification</h3><p>The legacy updater checks the official GitHub asset, size, SHA-256 and Windows Authenticode signature. It refuses installation unless Windows validates SignPath Foundation as the signer.</p></article>
+        <article class="card"><h3>Verified downloads</h3><p>The app checks the official GitHub asset digest, size, and published SHA-256. Windows blocks invalid signatures and labels unsigned beta installers before you choose to open them. Mac opens the verified ZIP in Finder for manual replacement.</p></article>
         <article class="card"><h3>Private bug reports</h3><p>On Windows or Mac, open Diagnostics, create a report, review the exact fields, then describe and send the issue. No GitHub account or email app is needed. The ZIP and financial data stay local.</p></article>
       </div>
-      <p class="security-note">OFFLINE STAYS OFFLINE // Local importing and diagnostics work without internet. Sending a bug report requires your review, confirmation and an internet connection. Windows 1.6.3 is unsigned: download it here and run setup manually. The Windows in-app updater intentionally rejects unsigned packages. Microsoft Store delivery and Store-managed updates are still pending approval. Mac beta updates are manual.</p>
+      <p class="security-note">OFFLINE STAYS OFFLINE // Local importing and diagnostics work without internet. Sending a bug report requires your review, confirmation and an internet connection. Install 1.6.3 from this page once; older app versions reject unsigned Windows installers and cannot update Mac betas in-app. Later releases can be checked and verified in the 1.6.3 Updates screen. Microsoft Store delivery remains pending approval.</p>
     </section>
 
     <section id="api-mcp" aria-labelledby="access-title">

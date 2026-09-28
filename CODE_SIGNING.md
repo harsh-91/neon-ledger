@@ -3,9 +3,9 @@
 
 ## Current status
 
-Statement Importer `v1.6.2` is currently unsigned. Verify the published SHA-256 before running the installer, and install it manually; the in-app updater rejects unsigned installers.
+Statement Importer `v1.6.3` is currently unsigned. Verify the published SHA-256 before running the installer. Earlier app versions reject unsigned installers, so install 1.6.3 manually once. The 1.6.3 in-app control verifies later releases and labels unsigned installers before you choose to open them.
 
-The `v1.6.2-mac-beta.1` macOS builds are ad hoc signed only. They have no Apple Developer ID signature or notarization. Check the [beta release](https://github.com/harsh-91/statement-importer/releases/tag/v1.6.2-mac-beta.1) for separate Apple Silicon and Intel downloads and SHA-256 checksums. Mac updates are manual.
+The `v1.6.3-mac-beta.1` macOS builds are ad hoc signed only. They have no Apple Developer ID signature or notarization. Check the [beta release](https://github.com/harsh-91/statement-importer/releases/tag/v1.6.3-mac-beta.1) for separate Apple Silicon and Intel downloads and SHA-256 checksums. The in-app control can verify and reveal later beta ZIPs; replacing the app remains manual.
 
 The SignPath Foundation application was not approved at the project's current adoption level. The primary future distribution route is Microsoft Store MSIX. Microsoft signs accepted Store packages, but Store approval is still pending.
 
@@ -21,7 +21,7 @@ The SignPath Foundation application was not approved at the project's current ad
 - Every signed release must publish SHA-256 checksums.
 - A signature must be verified before an artifact is attached to a public release.
 - Unsigned historical releases remain clearly identified as unsigned.
-- The in-app updater rejects any installer that Windows does not validate as signed by SignPath Foundation.
+- The in-app updater rejects invalid or unexpected Windows signatures. Unsigned beta installers require a matching GitHub digest and release SHA-256, and an explicit click to open.
 
 ## Privacy policy
 
