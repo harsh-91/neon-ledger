@@ -214,10 +214,10 @@
         <h1>Your statements.<span>Your database.</span></h1>
         <p class="lede">Import bank statements into PostgreSQL, prevent duplicates, reconcile balances and query everything through one unified view. Your financial files and passwords stay on your computer.</p>
         <div class="actions">
-          <a class="button" href="https://github.com/harsh-91/statement-importer/releases/download/v1.4.0/StatementImporter-1.4.0-Setup-x64.exe">↓ Download for Windows</a>
-          <a class="button secondary" href="https://github.com/harsh-91/statement-importer/releases/tag/v1.4.0">Release details</a>
+          <a class="button" href="https://github.com/harsh-91/statement-importer/releases/download/v1.6.2/StatementImporter-1.6.2-Setup-x64.exe">↓ Download for Windows</a>
+          <a class="button secondary" href="https://github.com/harsh-91/statement-importer/releases/tag/v1.6.2">Release details</a>
         </div>
-        <p class="micro"><strong>Version 1.4.0</strong> · Windows 10/11 x64 · Apache-2.0 · No account required</p>
+        <p class="micro"><strong>Version 1.6.2</strong> · Windows 10/11 x64 · Apache-2.0 · No account required · Manual update</p>
       </div>
 
       <aside class="terminal" aria-label="Application capabilities">
@@ -250,7 +250,13 @@
       </div>
       <ol class="release-list">
         <li class="release-entry">
-          <div class="release-meta"><time datetime="2026-09-22">22 SEP 2026</time><span class="new-badge">LATEST</span></div>
+          <div class="release-meta"><time datetime="2026-09-28">28 SEP 2026</time><span class="new-badge">LATEST</span></div>
+          <h3><a href="https://github.com/harsh-91/statement-importer/releases/tag/v1.6.2">v1.6.2 <span aria-hidden="true">↗</span></a></h3>
+          <strong>Database setup fix</strong>
+          <p>Fixes a PostgreSQL first-run startup hang. This unsigned Windows installer is a manual update while Store approval is pending.</p>
+        </li>
+        <li class="release-entry">
+          <div class="release-meta"><time datetime="2026-09-22">22 SEP 2026</time></div>
           <h3><a href="https://github.com/harsh-91/statement-importer/releases/tag/v1.4.0">v1.4.0 <span aria-hidden="true">↗</span></a></h3>
           <strong>A clearer flight path</strong>
           <p>Visible setup progress and elapsed time, safer upgrade checks, retry options and simpler first-run navigation.</p>
@@ -261,15 +267,9 @@
           <strong>Installer preparation</strong>
           <p>Removed the blocking wait on older app launchers during upgrade preparation.</p>
         </li>
-        <li class="release-entry">
-          <div class="release-meta"><time datetime="2026-09-21">21 SEP 2026</time></div>
-          <h3><a href="https://github.com/harsh-91/statement-importer/releases/tag/v1.3.4">v1.3.4 <span aria-hidden="true">↗</span></a></h3>
-          <strong>Upgrade handling</strong>
-          <p>Replaced Windows Setup's generic close-applications stage with app-specific shutdown handling.</p>
-        </li>
       </ol>
       <a class="all-releases" href="https://github.com/harsh-91/statement-importer/releases">All release notes →</a>
-      <p class="rail-note">Older releases are superseded by v1.4.0. Dates shown in UTC.</p>
+      <p class="rail-note">Older releases are superseded by v1.6.2. Dates shown in UTC.</p>
       <div class="arcade-track" aria-hidden="true"><span>◆</span></div>
       <button class="motion-control" type="button" aria-pressed="false" hidden>Pause animations</button>
     </aside>
@@ -298,7 +298,7 @@
         </article>
       </div>
       <div class="notice"><strong>Windows signing status:</strong> this release is currently unsigned, so Microsoft SmartScreen may show “Unknown publisher.” Verify the checksum below before running it and review the <a href="https://github.com/harsh-91/statement-importer/blob/main/CODE_SIGNING.md">code signing policy</a>.</div>
-      <div class="notice"><strong>Upgrading from an older version?</strong> Finish imports and backups, then run version 1.4.0. Setup shows progress while closing the previous copy and asks permission if it needs to force it to close. If a check fails, use Retry or Cancel and follow the recovery message.</div>
+      <div class="notice"><strong>Upgrading from an older version?</strong> Finish imports and make a database backup, then download and run the 1.6.2 installer manually. You do not need to uninstall the old version. Setup shows progress while closing the previous copy and asks permission if it needs to force it to close. If a check fails, use Retry or Cancel and follow the recovery message.</div>
     </section>
 
     <section id="updates" aria-labelledby="updates-title">
@@ -308,7 +308,7 @@
         <article class="card"><h3>You stay in control</h3><p>An automatic check only reads public release metadata. The app never downloads or installs an update silently; both actions require your click.</p></article>
         <article class="card"><h3>Verification before install</h3><p>The app checks the exact official GitHub asset, size, published SHA-256 and Windows Authenticode signature. It refuses installation unless Windows validates SignPath Foundation as the signer.</p></article>
       </div>
-      <p class="security-note">OFFLINE STAYS OFFLINE // Leave automatic checks disabled and every local feature continues to work without internet. Because v1.4.0 is still awaiting SignPath signing, existing users must install this release manually; the safe updater intentionally rejects unsigned packages.</p>
+      <p class="security-note">OFFLINE STAYS OFFLINE // Leave automatic checks disabled and every local feature continues to work without internet. Version 1.6.2 is unsigned: download it here and run setup manually. The in-app updater intentionally rejects unsigned packages. Microsoft Store delivery and Store-managed updates are still pending approval.</p>
     </section>
 
     <section id="api-mcp" aria-labelledby="access-title">
@@ -342,9 +342,9 @@
 
     <section aria-labelledby="verify-title">
       <h2 id="verify-title">Verify your download</h2>
-      <p class="lede">SHA-256 for <strong>StatementImporter-1.4.0-Setup-x64.exe</strong></p>
+      <p class="lede">SHA-256 for <strong>StatementImporter-1.6.2-Setup-x64.exe</strong></p>
       <div class="checksum">
-        <code id="hash">19EA40C3B45BD9BD6C4061E78608E1F4561F73CBFD817A7C531E6F5854A8F48E</code>
+        <code id="hash">0E8D76765B3835510025214917BAE10094939AA6F93066CF93E063F791D312E5</code>
         <button class="copy" type="button" id="copy-hash">COPY HASH</button>
       </div>
     </section>
@@ -365,7 +365,7 @@
 
   <footer>
     <div class="shell">
-      <span><strong>NEON LEDGER</strong> // Statement Importer v1.4.0 · Apache-2.0</span>
+      <span><strong>NEON LEDGER</strong> // Statement Importer v1.6.2 · Apache-2.0</span>
       <a href="privacy.html">Privacy policy</a>
       <span class="footer-creator"><span>Created by <strong>Harsh</strong><small>Made in India 🇮🇳</small></span><img class="footer-portrait" src="harsh-2bit.png" alt="Two-bit pixel portrait of Harsh" width="68" height="68"></span>
     </div>

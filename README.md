@@ -23,7 +23,7 @@ The right-hand transmission log in `index.html` lists exactly three public relea
 
 - No statements, account data, database backups, passwords or API keys belong in this repository.
 - Statement Importer operates locally and binds its optional API/MCP services to `127.0.0.1` by default.
-- Version 1.4.0 is unsigned. Verify its published SHA-256 checksum while trusted code-signing approval is pending.
+- Version 1.6.2 is unsigned. Verify its published SHA-256 checksum before running it. Existing users must update manually; the in-app updater rejects unsigned installers. Microsoft Store approval is still pending.
 - Version 1.4.0 verifies executable release before upgrading, shows timed progress, asks before force-closing the selected installation, and offers recovery on failure. Database setup reports live stages and supports retry.
 - Version 1.3.2 fixes the existing-database wizard freeze by bounding connection attempts to five seconds.
 - Version 1.3.0 includes an explicitly controlled updater that refuses unsigned installers; no download or install is silent.
