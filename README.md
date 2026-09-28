@@ -13,7 +13,7 @@ GitHub Pages publishes this repository at:
 
 The homepage shows Windows and Mac download buttons with platform logos. The Windows installer and Mac beta app ZIPs are downloaded from official Statement Importer GitHub releases. The page includes installation instructions, system requirements, API/MCP connection guidance and release checksums. Mac users should choose the Apple Silicon or Intel ZIP for their computer and consult the beta release for its SHA-256 checksum.
 
-The [privacy policy](privacy.html) explains local statement processing, optional network features, user-sent diagnostic reports and the public support contact.
+The [privacy policy](privacy.html) explains local statement processing, optional network features, private GitHub bug report submission and the public privacy contact.
 
 ## Updating the release column
 
@@ -23,7 +23,7 @@ The right-hand transmission log in `index.html` lists exactly three Windows rele
 
 - No statements, account data, database backups, passwords or API keys belong in this repository.
 - Statement Importer operates locally and binds its optional API/MCP services to `127.0.0.1` by default.
-- Version 1.6.2 is unsigned. Verify its published SHA-256 checksum before running it. Existing users must update manually; the in-app updater rejects unsigned installers. Microsoft Store approval is still pending.
+- Version 1.6.3 is unsigned. Verify its published SHA-256 checksum before running it. Existing users of earlier versions must update to 1.6.3 manually; the new in-app control verifies later downloads and labels unsigned installers. Microsoft Store approval is still pending.
 - The macOS beta is ad hoc signed but has no Apple Developer ID signature or notarization. It is a prerelease and has not been exercised on a physical Mac. Verify the architecture-specific ZIP checksum and keep a backup of important data.
 - Version 1.4.0 verifies executable release before upgrading, shows timed progress, asks before force-closing the selected installation, and offers recovery on failure. Database setup reports live stages and supports retry.
 - Version 1.3.2 fixes the existing-database wizard freeze by bounding connection attempts to five seconds.
