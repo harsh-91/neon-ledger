@@ -358,8 +358,9 @@
         </article>
         <article class="card">
           <h3>MCP server</h3>
-          <p>Add the endpoint to an HTTP MCP client and send <code>Authorization: Bearer YOUR_KEY</code>. Your AI can then call the read-only tools you approve.</p>
-          <div class="endpoint">HTTP MCP: http://127.0.0.1:8765/mcp</div>
+          <p>For Claude Desktop, <a href="https://github.com/harsh-91/statement-importer/releases/download/v1.6.4/NeonLedger-ClaudeDesktop.mcpb">download the local extension</a>. In Claude Desktop, open Settings → Extensions → Advanced settings → Install Extension, then enter the read-only key from the app. Keep the app running with MCP enabled.</p>
+          <p>Claude's “Add custom connector” field requires a public HTTPS server and cannot connect to this local address. Other local HTTP MCP clients can use <code>Authorization: Bearer YOUR_KEY</code>.</p>
+          <div class="endpoint">Local HTTP MCP: http://127.0.0.1:8765/mcp</div>
           <ul class="tag-list" aria-label="MCP tools"><li>list_banks</li><li>list_accounts</li><li>search_transactions</li><li>get_account_balances</li><li>get_import_history</li><li>get_transaction_schema</li></ul>
         </article>
         <article class="card wide-card">
