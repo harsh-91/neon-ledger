@@ -3,9 +3,11 @@
 
 ## Current status
 
-Statement Importer `v1.4.0` is currently unsigned. It must not be represented as signed until a trusted Authenticode signature has been applied and independently verified.
+Statement Importer `v1.6.2` is currently unsigned. Verify the published SHA-256 before running the installer, and install it manually; the in-app updater rejects unsigned installers.
 
-The project is preparing an application for **free code signing provided by SignPath.io, certificate by SignPath Foundation**. Signing can begin only after the open-source project is reviewed and approved by SignPath Foundation.
+The `v1.6.2-mac-beta.1` macOS builds are ad hoc signed only. They have no Apple Developer ID signature or notarization. Check the [beta release](https://github.com/harsh-91/statement-importer/releases/tag/v1.6.2-mac-beta.1) for separate Apple Silicon and Intel downloads and SHA-256 checksums. Mac updates are manual.
+
+The SignPath Foundation application was not approved at the project's current adoption level. The primary future distribution route is Microsoft Store MSIX. Microsoft signs accepted Store packages, but Store approval is still pending.
 
 ## Team roles
 
